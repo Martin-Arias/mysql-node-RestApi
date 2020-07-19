@@ -64,7 +64,8 @@ router.post('/orders/new', (req, res) => {
       if (err) throw err;
      res.json({
         'Nueva orden creada': newOrderId,
-        'Mas informacion': `http://localhost:3000/api/users/orders/${newOrderId}`
+        'Mas informacion': `http://localhost:3000/api/users/orders/${newOrderId}`,
+        'Items': products
       });
     });
 
